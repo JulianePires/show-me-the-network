@@ -1,3 +1,11 @@
+//FUNCAO ONMOUSELEAVE
+function exitIntent(){
+    document.getElementById("mensage").innerHTML = "Pop up Exit Intent em construção";
+}
+
+
+
+//CONTADOR
 //DEFINE A DATA PARA QUAL ESTAMOS CONTANDO
 var dataContador = new Date("Jul 9, 2020 20:00:00").getTime();
 

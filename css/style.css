@@ -8,3 +8,9 @@ p{
     font-weight: bold;
     color: blueviolet;
 }
+
+.container {
+    width: 1000px;
+    height: 1000px;
+}
+
