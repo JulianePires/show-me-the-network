@@ -30,33 +30,4 @@ var x = setInterval(function() {
     }
 }, 1000);
 
-//FORM
-var campoNome = document.getElementById("nome");
-var campoEmail = document.getElementById("email");
 
-document.getElementById("botao").addEventListener('click', Salvar);
-
-function Salvar(){
-
-    var Nome = campoNome.value;
-    var Email = campoEmail.value;
-
-    if (Nome.trim().length == 0 || Email.trim().length == 0){
-
-        M.toast({html: 'Preencher todos os campos!'});
-
-        }else{
-
-            var Dados = {
-
-                Nome: campoNome.value,
-                Email: campoEmail.value
-
-
-            };
-            google.script.run.RegistrarViewer (Dados);
-        }
-
-    }
-
-}
