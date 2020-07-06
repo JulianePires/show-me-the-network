@@ -1,10 +1,3 @@
-//FUNCAO ONMOUSELEAVE
-function exitIntent(){
-    document.getElementById("mensage").innerHTML = "Pop up Exit Intent em construção";
-}
-
-
-
 //CONTADOR
 //DEFINE A DATA PARA QUAL ESTAMOS CONTANDO
 var dataContador = new Date("Jul 9, 2020 20:00:00").getTime();
@@ -33,6 +26,37 @@ var x = setInterval(function() {
 
     if (distancia < 0) {
         clearInterval(x);
-        document.getElementById("contador").innerHTML = "Tempo Esgotado"
+        document.getElementById("contador").innerHTML = "Tempo Esgotado";
     }
 }, 1000);
+
+//FORM
+var campoNome = document.getElementById("nome");
+var campoEmail = document.getElementById("email");
+
+document.getElementById("botao").addEventListener('click', Salvar);
+
+function Salvar(){
+
+    var Nome = campoNome.value;
+    var Email = campoEmail.value;
+
+    if (Nome.trim().length == 0 || Email.trim().length == 0){
+
+        M.toast({html: 'Preencher todos os campos!'});
+
+        }else{
+
+            var Dados = {
+
+                Nome: campoNome.value,
+                Email: campoEmail.value
+
+
+            };
+            google.script.run.RegistrarViewer (Dados);
+        }
+
+    }
+
+}
