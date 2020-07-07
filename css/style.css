@@ -46,14 +46,14 @@ p{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 900;
-    font-size: 40px;
+    font-size: 50px;
     line-height: 94px;
     color: #F28123;
 
     margin-left: 0.1%;
 }
 
-@media (min-width: 380px ) {
+@media (min-width: 560px ) {
     .display-1 {
         font-family: 'Roboto', sans-serif;
         font-style: normal;
@@ -231,10 +231,22 @@ body {
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
-    font-size: 120px;
+    font-size: 60px;
     line-height: 141px;
     color: #F28123;
     padding-left: 50px;
+}
+
+@media (min-width: 560px ) {
+    #typagetitulo {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 120px;
+        line-height: 141px;
+        color: #F28123;
+        padding-left: 50px;
+    }
 }
 
 #typagetxt {
