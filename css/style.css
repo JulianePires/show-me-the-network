@@ -196,7 +196,7 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
-    font-size: 28px;
+    font-size: 15px;
     line-height: 37px;
     text-align: center;
     color: #462255;
@@ -402,5 +402,7 @@ margin-bottom: 3%;
         font-weight: 400;
     }
 
-
+    #button {
+        font-size: 28px;
+    }
 }
