@@ -32,6 +32,33 @@ var x = setInterval(function() {
     }
 }, 1000);
 
+function closePopUpAndGoToForm(event) {
+    // Hide the popup
+    document.getElementById("sad-news").style.display = "none";
+    location.hash = "#formulario";
+}
+function closePopUp(event) {
+    // Hide the popup
+    document.getElementById("sad-news").style.display = "none";
+}
+
+function onMouseOut(event) {
+    // If the mouse is near the top of the window, show the popup
+    // Also, do NOT trigger when hovering or clicking on selects
+    if (
+        event.clientY < 50 &&
+        event.relatedTarget == null &&
+        event.target.nodeName.toLowerCase() !== 'select') {
+        // Remove this event listener
+        document.removeEventListener("mouseout", onMouseOut);
+
+        // Show the popup
+        document.getElementById("sad-news").style.display = "block";
+    }
+}
+// ação do evento
+document.addEventListener("mouseout", onMouseOut); 
+
 // Exit intent
 function addEvent(obj, evt, fn) {
     if (obj.addEventListener) {
