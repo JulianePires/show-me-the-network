@@ -23,7 +23,7 @@ p{
 }
 
 .bg{
-    background-image: url("../imagens/bg-homepage-desktop-roxo-1440x1024px.jpg");
+    background-image: url("../imagens/bg-home-mobile-roxo-360x640px.jpg");
     height: 1000px;
     background-position: center;
     background-repeat: no-repeat;
@@ -31,13 +31,39 @@ p{
     position: relative;
 }
 
+@media (min-width: 280px ) {
+    .bg {
+        background-image: url("../imagens/bg-homepage-desktop-roxo-1440x1024px.jpg");
+    }
+
+    body {
+        font-size: 1rem;
+    }
+}
+
+
 .display-1{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 900;
-    font-size: 80px;
+    font-size: 40px;
     line-height: 94px;
     color: #F28123;
+
+    margin-left: 0.1%;
+}
+
+@media (min-width: 380px ) {
+    .display-1 {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 80px;
+        line-height: 94px;
+        color: #F28123;
+
+        margin-left: 0.1%;
+    }
 }
 
 .h4{
