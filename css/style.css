@@ -275,3 +275,147 @@ color: rgba(113, 113, 113, 0.7);
 margin-top: 10%;
 margin-bottom: 3%;
 }
+
+.lightbox .box {
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    width: 70%;
+    height: auto;
+    max-width: 1441.54px;
+    margin: 2% auto;
+    padding:20px;
+    background-color:#FFF;
+    box-shadow: 0px 1px 26px -3px #777777;
+    background: url(../images/bg-popup-desktop-roxo-1440x1024px.jpg);
+    }
+
+    .lightbox .title {
+        margin:0;
+        padding:0 0 10px 0px;
+        border-bottom:1px #ccc solid;
+        font-size:22px;
+        }
+
+    .lightbox .content {
+        display:block;
+        padding:20px 0 0 0px;
+        font-size:18px;
+        line-height:22px;
+        margin-left: 10%;
+        }
+
+    .lightbox .close {
+        float:right;
+        display:block;
+        text-decoration:none;
+        font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size:22px;
+        color:#858585;
+        }
+
+.lightbox .open {
+    /** Show lightbox when mouse leaves the browser window */
+    display: block;
+    outline: none;
+}
+
+.logoPop {
+    width: 15%;
+}
+
+.titulo1Pop {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    color: #462255;
+    font-size: 100%;
+}
+
+#titulo2Pop {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    color: #462255;
+    font-size: 80%;
+}
+
+#botao{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    position: relative;
+    overflow-x: auto;
+    background: none;
+    border: white 1px solid;
+    color: #ffffff;
+    font-size: 100%;
+}
+
+#tempoRestante {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    color: #462255;
+    font-size: 80%;
+}
+
+.nomesContador {
+    display: block;
+    background: white;
+    padding-top: 20%;
+    height: auto;
+    text-align: center;
+    border-radius: 10%;
+    width: 100%;
+    padding-bottom: 20%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 160%;
+    color: #462255;
+    font-weight: 900;
+}
+
+
+
+.textoContador {
+    font-family: 'Roboto', sans-serif;
+    color: #462255;
+    font-size: 60%;
+    padding-left: 20%;
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 720px) {
+
+    .nomesContador {
+        width: 60%;
+        font-size: 230%;
+    }
+    
+    #d{
+        padding-bottom: 20%;
+        width: 50%;
+        
+    }
+    .textoContador {
+        font-size: 160%;
+    }
+
+    .titulo1Pop{
+        font-size: 260%;
+    }
+
+    #titulo2Pop{
+        font-size: 180%;
+    }
+
+    #tempoRestante {
+        font-size: 240%;
+        font-weight: 400;
+    }
+
+
+}

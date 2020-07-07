@@ -19,8 +19,10 @@ var x = setInterval(function() {
     var segundos = Math.floor((distancia % (1000 * 60)) / 1000);
 
     //IMPRIME O RESULTADO NO ELEMENTO COM A id="contador"
-
-    document.getElementById("contador").innerHTML = dias + "d" + horas + "h" + minutos + "m" + segundos + "s";
+    document.getElementById("d").innerHTML = dias;
+    document.getElementById("h").innerHTML = horas;
+    document.getElementById("m").innerHTML = minutos;
+    document.getElementById("s").innerHTML = segundos;
 
     //SE A CONTAGEM CHEGAR AO FINAL, IMPRIME UMA MENSAGEM
 
@@ -50,7 +52,7 @@ addEvent(document, 'mouseout', function(evt) {
 });
 
 // Closing the Popup Box
-$('a.close').click(function(){
-    $('.lightbox').slideUp();
+$( '#botao').on('click', function(event) {
+    $(".lightbox").slideUp();
 });
 
