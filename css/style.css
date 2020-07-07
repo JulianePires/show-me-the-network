@@ -268,61 +268,28 @@ margin-top: 10%;
 margin-bottom: 3%;
 }
 
-.lightbox .box {
-    left: 0;
-    top: 0;
-    position: absolute;
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
-    width: 70%;
-    height: auto;
-    max-width: 1441.54px;
-    margin: 2% auto;
-    padding:20px;
-    background-color:#FFF;
-    box-shadow: 0px 1px 26px -3px #777777;
-    background: url(../images/bg-popup-desktop-roxo-1440x1024px.jpg);
-    }
+/* Pop up */ 
 
-    .lightbox:after {
-		content: '';
-		display: table;
-		clear: both;
-	}
-
-    .lightbox .title {
-        margin:0;
-        padding:0 0 10px 0px;
-        border-bottom:1px #ccc solid;
-        font-size:22px;
-        }
-
-    .lightbox .content {
-        display:block;
-        padding:20px 0 0 0px;
-        font-size:18px;
-        line-height:22px;
-        margin-left: 10%;
-        }
-
-    .lightbox .close {
-        float:right;
-        display:block;
-        text-decoration:none;
-        font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size:22px;
-        color:#858585;
-        }
-
-.lightbox .open {
-    /** Show lightbox when mouse leaves the browser window */
-    display: block;
-    outline: none;
+.sad-news-container {
+    width: 100%;
+    height: 100%; 
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imagens/bg-popup-desktop-roxo-1440x1024px.jpg);
 }
 
-.logoPop {
-    width: 15%;
+.container-news {
+    width: 100%;
+    height: 100%;
+}
+
+.img-logo {
+    width: 130px;
 }
 
 .titulo1Pop {
@@ -330,15 +297,17 @@ margin-bottom: 3%;
     font-style: normal;
     font-weight: 900;
     color: #462255;
-    font-size: 100%;
+    font-size: 250%;
+    width: 70%;
 }
 
 #titulo2Pop {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: bold;
+    font-weight: normal;
     color: #462255;
-    font-size: 80%;
+    font-size: 140%;
+    width: 70%;
 }
 
 #botao{
@@ -351,6 +320,7 @@ margin-bottom: 3%;
     border: white 1px solid;
     color: #ffffff;
     font-size: 100%;
+    margin-top: 5%;
 }
 
 #tempoRestante {
@@ -358,46 +328,48 @@ margin-bottom: 3%;
     font-style: normal;
     font-weight: 900;
     color: #462255;
-    font-size: 80%;
+    font-size: 130%;
 }
 
 .nomesContador {
     display: block;
     background: white;
-    padding-top: 20%;
+    padding-top: 10%;
     height: auto;
     text-align: center;
     border-radius: 10%;
     width: 100%;
-    padding-bottom: 20%;
+    padding-bottom: 10%;
     font-family: 'Roboto', sans-serif;
     font-size: 160%;
     color: #462255;
     font-weight: 900;
 }
 
-
-
 .textoContador {
     font-family: 'Roboto', sans-serif;
     color: #462255;
-    font-size: 60%;
+    font-size: 100%;
     padding-left: 20%;
     font-weight: 700;
 }
 
+
 @media only screen and (min-width: 720px) {
+
+    .img-logo {
+        width: 150px;
+    }
+
+    .m-3{
+        margin-left: 11.5rem !important;
+    }
 
     .nomesContador {
         width: 60%;
         font-size: 230%;
     }
     
-    #d{
-        padding-bottom: 20%;
-        width: 50%;
-        
-    }
     .textoContador {
         font-size: 160%;
     }
@@ -406,16 +378,21 @@ margin-bottom: 3%;
         font-size: 260%;
     }
 
-    #titulo2Pop{
-        font-size: 180%;
+   #titulo2Pop{
+        font-size: 150%;
+        font-weight: normal;
+        width: 40%;
+        overflow-wrap: break-word;
     }
 
     #tempoRestante {
-        font-size: 240%;
-        font-weight: 400;
+        font-size: 160%;
+        font-weight: 900;
     }
 
     #button {
         font-size: 28px;
+        margin-top: 48px;
+        width: 30%;
     }
 }

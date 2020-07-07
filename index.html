@@ -137,49 +137,80 @@
         </div>
   
 
-        <!--<div class="lightbox modal-dialog modal-xl" id="text" layout="nodisplay">
-            <div class="box">
-                <div class="close">X</div>
-                <div class="content">
-                    <img src="imagens/logo-tened-transp-roxo.png" class="img-fluid logoPop">
-                    <h2 class="titulo1Pop p-3">Vai mesmo deixar essa passar?</h2>
-                    <h4 id="titulo2Pop" class="p-3">Não perca tempo e aproveite essa oportunidade! Inscreva-se e receba materiais exclusivos.</h4>
-                    <button id="botao" action="js/script.js" class="btn d-block btn-light">Quero perder essa oportunidade</button>
-                    <h4 id="tempoRestante" class="p-3">Tempo restante para se inscrever:</h4>
-                    <div class="container row mx-auto">
-                        <div class="col-3">
-                            <div id="d" class="container mx-auto nomesContador">
-                                
-                            </div>
-                            <h5 class="textoContador" id="d">dias</h5>
+        <div id="sad-news" class="sad-news-container">
+            <div class="container-news">
+                <img class="img-logo m-3" src="images/logo-tened-transp-roxo.png" alt="Logotipo Tened">
+                <h2 class="titulo1Pop m-3 ">Vai mesmo deixar essa passar?</h2>
+                <h4 id="titulo2Pop" class="m-3">Não perca tempo e aproveite essa oportunidade! Inscreva-se e receba materiais
+                    exclusivos.</h4>
+                <h4 id="tempoRestante" class="m-3">Tempo restante para se inscrever:</h4>
+        
+                <div class="container row mx-auto">
+                    <div class="col-3">
+                        <div id="d" class="container mx-auto nomesContador">
+        
                         </div>
-                        <div class="col-3">
-                            <div id="h" class="container-fluid mx-auto d-block nomesContador">
-                                
-                            </div>
-                            <h5 class="textoContador container-fluid mx-auto d-block ">horas</h5>
+                        <h5 class="textoContador" id="d">dias</h5>
+                    </div>
+                    <div class="col-3">
+                        <div id="h" class="container-fluid mx-auto d-block nomesContador">
+        
                         </div>
-                        <div class="col-3">
-                            <div id="m" class="container mx-auto d-block nomesContador">
-                                
-                            </div>
-                            <h5 class="textoContador mx-auto d-block">minutos</h5>
+                        <h5 class="textoContador container-fluid mx-auto d-block ">horas</h5>
+                    </div>
+                    <div class="col-3">
+                        <div id="m" class="container mx-auto d-block nomesContador">
+        
                         </div>
-                        <div class="col-3">
-                            <div id="s" class="container mx-auto d-block nomesContador">
-                                
-                            </div>
-                            <h5 class="textoContador mx-auto d-block">segundos</h5>
+                        <h5 class="textoContador mx-auto d-block">minutos</h5>
+                    </div>
+                    <div class="col-3">
+                        <div id="s" class="container mx-auto d-block nomesContador">
+        
                         </div>
+                        <h5 class="textoContador mx-auto d-block">segundos</h5>
                     </div>
                 </div>
-            </div>
-        </div>-->
+                <div class=" d-flex justify-content-center"> ;
+                    <button id="botao" class="btn d-block btn-light" onclick="closePopUpAndGoToForm()" href="#void">Quero perder
+                        essa oportunidade</button>
+                </div>
+        
 
+            </div>
+        </div>
+        </div>
+        <script>
+            function closePopUpAndGoToForm(event) {
+                // Hide the popup
+                document.getElementById("sad-news").style.display = "none";
+                location.hash = "#form";
+            }
+            function closePopUp(event) {
+                // Hide the popup
+                document.getElementById("sad-news").style.display = "none";
+            }
+
+            function onMouseOut(event) {
+                // If the mouse is near the top of the window, show the popup
+                // Also, do NOT trigger when hovering or clicking on selects
+                if (
+                    event.clientY < 50 &&
+                    event.relatedTarget == null &&
+                    event.target.nodeName.toLowerCase() !== 'select') {
+                    // Remove this event listener
+                    document.removeEventListener("mouseout", onMouseOut);
+
+                    // Show the popup
+                    document.getElementById("sad-news").style.display = "block";
+                }
+            }
+            // ação do evento
+            document.addEventListener("mouseout", onMouseOut); 
+        </script>
 
     </div>
 
-    
     
 </body>
 
