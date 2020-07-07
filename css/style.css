@@ -26,6 +26,7 @@ p{
     background-image: url("../imagens/bg-homepage-desktop-roxo-1440x1024px.jpg");
     background-repeat: no-repeat;
     height: 1000px;
+    background-size: auto;
 }
 
 .display-1{
