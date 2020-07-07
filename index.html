@@ -42,140 +42,142 @@
 
 <body>
 
-   <div class="container-fluid px-0">
-      <div class="bg container-fluid" >
+   <div alt="fundo com garoto segurando binóculos" class="container-sm|md|lg|xl container-fluid mx-auto px-0" id="corpo">
+      <div class="bg container-fluid mx-auto" >
         <div class="row col-md-12" >
-          <div class="col-md-12 ml-5 mt-5" >
-            <img src="imagens/logo-tened-branco-roxo.png" class="logo" alt="Logotipo Tened">
+          <div class="col-md-12 ml-5 mt-5 mx-auto" >
+            <!--LOGO TENED--><img alt="logo Tened" src="imagens/logo-tened-branco-roxo.png" class="logo" alt="Logotipo Tened">
           </div>
         </div>
-        <div class="row mt-5">
-          <div class="col-md-6 ml-5">
+        <div class="row mt-5 mx-auto">
+          <div class="col-md-6 ml-5 mx-auto">
             <h1 class="display-1">Educação básica privada e a inovação</h1>
           </div>
-            <div class="col-md-offset-6"></div>
+            <div class="col-md-offset-6 mx-auto"></div>
         </div>
-        <div class="row">
-          <div class="col-md-6 ml-5" >
+        <div class="row mx-auto">
+          <div class="col-md-6 ml-5 mx-auto" >
             <p class="h4">Como se preparar para a transformação digital e seus impactos na
-                 educação básica privada</p>
-                 
+                 educação básica privada</p>     
           </div>
-            <div class="col-md-offset-6" id="bglinha"></div>
         </div>
       </div>
-         <div class="row">
-            <div class="col-md-12" id="bglinha">
-                <h2 id="conheca">Conheça o projeto TENED, nossa missão é incentivar a discussão sobre educação disruptiva, 
+         <div class="row mx-auto" >
+            <div class="col-md-12 mx-auto" id="bglinha">
+                <div class="container-sm|md|lg|xl text-left container-fluid p-4"><h2 id="conheca">Conheça o projeto TENED, nossa missão é incentivar a discussão sobre educação disruptiva, 
                 compartilhando informações sobre tendências para a educação privada no Brasil, promovendo 
-                o desenvolvimento de habilidades digitais e a criatividade</h2>
+                o desenvolvimento de habilidades digitais e a criatividade</h2></div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12" id="bglinha">
+        <div class="row mx-auto">
+            <div class="container-sm|md|lg|xl text-left container-fluid p-3" id="bglinha">
                 <h2 id="nossaequipe">Nossa equipe</h2>
+                <br>
             </div>
         </div>
-        <div class="row">
+        <div class="row mx-auto">
             <div class="col-md-4" id="bglinha">
                 <div id="quadrado">
-                    <img src="images/Juliane.png" alt="Avatar" id="imagemavatar">
+                    <!--FOTO JULIANE--><img alt="foto da colaboradora Juliane" src="images/Juliane.png" alt="Avatar" id="imagemavatar">
                     <h2 id="avatar1">Juliane</h2>
                     <h3 id="txtavatar1">Empoderamento e Tecnologia</h3>
                 </div>
             </div>
             <div class="col-md-4" id="bglinha">
                 <div id="quadrado">
-                    <img src="images/Luiz-Otávio.jpeg" alt="Avatar" id="imagemavatar">
+                    <!--FOTO JOHN--><img alt="foto do colaborador John Lemos" src="images/john.jpg" alt="Avatar" id="imagemavatar">
                     <h2 id="avatar1">John Lemos</h2>
                     <h3 id="txtavatar1">Inovação e meio ambiente</h3>
                 </div>
             </div>
             <div class="col-md-4" id="bglinha">
                 <div id="quadrado">
-                    <img src="images/Luiz-Otávio.jpeg" alt="Avatar" id="imagemavatar">
+                    <!--FOTO LUIZ--><img alt="foto do colaborador Luiz Soares" src="images/Luiz-Otávio.jpeg" alt="Avatar" id="imagemavatar">
                     <h2 id="avatar1">Luiz Otávio Nhimi</h2>
                     <h3 id="txtavatar1">Facilitação e experiência</h3>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12" id="bglinha">
-                <div id="quadradoform">
-                    <h2 id="conheca">Somos motivados pela inovação e você é nosso 
+        <div class="row mx-auto">
+            <div class="col-md-12 d-block" id="bglinha">
+                <div class="d-block mx-auto" id="quadradoform">
+                    <br><br>
+                    <div class="container-sm|md|lg|xl text-center container-fluid"><h2 id="conheca">Somos motivados pela inovação e você é nosso 
                         convidado para participar do webinar Caminhos da Educação. 
-                    </h2>
-                    <h2 id="nossaequipe">Inscreva-se aqui!
-                    </h2>
+                    </h2></div>
+                    <div class="container-sm|md|lg|xl text-center container-fluid p-3"><h2 id="inscrevase">Inscreva-se aqui!</h2></div>
                     
-            <form role="form" method="POST" action="https://app.sendgrid.com/guide/integrate/langs/nodejs"> 
-          
-                <div class="form-group">
-                  <div>
-                    <input name="name" type="text" class="form-control11" id="nome1" placeholder="Nome e Sobrenome*"
-                    pattern="^\D{2,}\s[\D\s]{2,}$" required style="color: black;"/>
-                  </div>
-  
-                  <div>
-                    <input name="email" type="email" class="form-control22" id="exampleInputEmail1" placeholder="E-mail*"
-                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required style="color: black;"/>
-                  </div>
-                </div>
-  
-                <input name="redirectTo" type="hidden" value="https://tened.co/typage.html"/>
-                <input type="submit" id="button" value="QUERO PARTICIPAR!"/>	
-  
-              </form>
+                    <form role="form" method="POST" netlify> 
+            
+                        <div class="form-group">
+                        <div>
+                            <input name="name" type="text" class="form-control11" id="nome1" placeholder="Nome e Sobrenome*"required style="color: black;"/>
+                        </div>
+        
+                        <div>
+                            <input name="email" type="email" class="form-control22" id="exampleInputEmail1" placeholder="E-mail*"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$" required style="color: black;"/>
+                        </div>
+                        </div>
+        
+                        <input name="redirectTo" type="hidden" value="https://tened.co/typage.html"/>
+                        <input type="submit" id="button" value="QUERO PARTICIPAR!"/>	
+    
+                    </form>
                 </div>
             </div>
         </div>
 
-        <div class="row">
+        <div class="row mx-auto">
             <div class="col-md-12" id="bglinha">
                 <h2 id="direitos">Todos os direitos reservados</h2>
             </div>
         </div>
+  
 
-
-    </div>
-
-    <div class="lightbox" id="text" style="display:none;">
-        <div class="box">
-            <div class="content">
-                <img src="imagens/logo-tened-transp-roxo.png" class="img-fluid logoPop">
-                <h2 class="titulo1Pop p-3">Vai mesmo deixar essa passar?</h2>
-                <h4 id="titulo2Pop" class="p-3">Não perca tempo e aproveite essa oportunidade! Inscreva-se e receba materiais exclusivos.</h4>
-                <button id="botao" class="btn d-block btn-light">Quero perder essa oportunidade</button>
-                <h4 id="tempoRestante" class="p-3">Tempo restante para se inscrever:</h4>
-                <div class="container row mx-auto">
-                    <div class="col-3">
-                        <div id="d" class="container mx-auto nomesContador">
-                            
+        <!--<div class="lightbox modal-dialog modal-xl" id="text" layout="nodisplay">
+            <div class="box">
+                <div class="close">X</div>
+                <div class="content">
+                    <img src="imagens/logo-tened-transp-roxo.png" class="img-fluid logoPop">
+                    <h2 class="titulo1Pop p-3">Vai mesmo deixar essa passar?</h2>
+                    <h4 id="titulo2Pop" class="p-3">Não perca tempo e aproveite essa oportunidade! Inscreva-se e receba materiais exclusivos.</h4>
+                    <button id="botao" action="js/script.js" class="btn d-block btn-light">Quero perder essa oportunidade</button>
+                    <h4 id="tempoRestante" class="p-3">Tempo restante para se inscrever:</h4>
+                    <div class="container row mx-auto">
+                        <div class="col-3">
+                            <div id="d" class="container mx-auto nomesContador">
+                                
+                            </div>
+                            <h5 class="textoContador" id="d">dias</h5>
                         </div>
-                        <h5 class="textoContador" id="d">dias</h5>
-                    </div>
-                    <div class="col-3">
-                        <div id="h" class="container-fluid mx-auto d-block nomesContador">
-                            
+                        <div class="col-3">
+                            <div id="h" class="container-fluid mx-auto d-block nomesContador">
+                                
+                            </div>
+                            <h5 class="textoContador container-fluid mx-auto d-block ">horas</h5>
                         </div>
-                        <h5 class="textoContador container-fluid mx-auto d-block ">horas</h5>
-                    </div>
-                    <div class="col-3">
-                        <div id="m" class="container mx-auto d-block nomesContador">
-                            
+                        <div class="col-3">
+                            <div id="m" class="container mx-auto d-block nomesContador">
+                                
+                            </div>
+                            <h5 class="textoContador mx-auto d-block">minutos</h5>
                         </div>
-                        <h5 class="textoContador mx-auto d-block">minutos</h5>
-                    </div>
-                    <div class="col-3">
-                        <div id="s" class="container mx-auto d-block nomesContador">
-                            
+                        <div class="col-3">
+                            <div id="s" class="container mx-auto d-block nomesContador">
+                                
+                            </div>
+                            <h5 class="textoContador mx-auto d-block">segundos</h5>
                         </div>
-                        <h5 class="textoContador mx-auto d-block">segundos</h5>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
+
+
     </div>
+
+    
     
 </body>
 

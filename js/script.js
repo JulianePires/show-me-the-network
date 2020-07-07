@@ -52,7 +52,9 @@ addEvent(document, 'mouseout', function(evt) {
 });
 
 // Closing the Popup Box
-$( '#botao').on('click', function(event) {
-    $(".lightbox").slideUp();
+$('#botao').click(function(){
+    $('.lightbox').hide();
 });
+
+
 
