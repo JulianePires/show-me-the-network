@@ -1,0 +1,8 @@
+# Group 1
+User-agent: *
+Allow: /
+
+User-agent: *
+Disallow: /
+
+Sitemap: https://www.tened.co/sitemap.xml
