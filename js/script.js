@@ -35,7 +35,7 @@ var x = setInterval(function() {
 function closePopUpAndGoToForm(event) {
     // Hide the popup
     document.getElementById("sad-news").style.display = "none";
-    location.hash = "#formulario";
+    location.hash = "#containerIframe";
 }
 function closePopUp(event) {
     // Hide the popup
@@ -69,19 +69,9 @@ function addEvent(obj, evt, fn) {
     }
 }
 
-// Exit intent trigger
-addEvent(document, 'mouseout', function(evt) {
-
-    if (evt.toElement == null && evt.relatedTarget == null ) {
-        $('.lightbox').slideDown();
-    };
-
-});
-
-// Closing the Popup Box
-$('#botao').click(function(){
-    $('.lightbox').hide();
-});
+function redirectTo() {
+    location.href = "#containerIframe";
+};
 
 
 
