@@ -69,9 +69,6 @@ function addEvent(obj, evt, fn) {
     }
 }
 
-function redirectTo() {
-    location.href = "#containerIframe";
-};
 
 
 
