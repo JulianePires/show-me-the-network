@@ -116,7 +116,7 @@ body{
     display: none;
     justify-content: center;
     align-items: center;
-    background-image: url(../images/bg-popup-desktop-roxo-1440x1024px.jpg) no-repeat;
+    background-image: url(../images/bg-popup-desktop-roxo-1440x1024px.jpg);
 }
 
 .container-news {
