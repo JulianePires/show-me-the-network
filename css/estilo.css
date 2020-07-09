@@ -10,42 +10,36 @@ body{
     background: #e0dfdf;
 }
 
-#section1{
-    display: flex;
-    justify-content: flex-end;
-}
-
-#bannerTopo{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-#botaoTopo{
-    position: relative;
-    font-size: 2vw;
-    background: #ffffff;
-    margin-top: 0.5%;
-    margin-right: 10%;
-    font-weight: 900;
-    font-family: 'Roboto Condensed', sans-serif;
-    border-radius: 2vw;
-    max-height: 25px;
-    color: #462255;
-
-}
-
 #section2{
-    max-width: 1920px;
+    width: 100%;
     height: auto;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     padding: 0;
+    height: 10.8em;
 }
 
 #bannerWebinar{
     max-width: 1920px;
     width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 
+}
+
+#botaoTopo{
+    position: relative;
+    font-size: 2.2vw;
+    background: #F28123;
+    font-weight: 400;
+    font-style: oblique;
+    font-family: 'Roboto Condensed', sans-serif;
+    border-radius: 2vw;
+    max-height: 25px;
+    margin-left: 2vw;
+    color: #ffffff;
 }
 
 #section3{
@@ -220,15 +214,22 @@ body{
     color: #ffffff;
 }
 
-@media (min-width: 640px) {
+@media (max-width: 540px) {
+    #section2{
+        height: 26vh;
+    }
+}
+
+
+@media (min-width: 720px) {
     #botaoTopo{
-        max-height: 50px;
+        max-height: 70px;
         border-radius: 10px;
         margin-top: 2%;
     }
 
     #section2{
-        padding-top: 2%;
+        height: 97vh;
     }
 
     #section3{
