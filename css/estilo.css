@@ -1,0 +1,298 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    max-width: 1920px;
+    width: 100%;
+    height: auto;
+    background: #e0dfdf;
+}
+
+#section1{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#bannerTopo{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#botaoTopo{
+    position: relative;
+    font-size: 2vw;
+    background: #ffffff;
+    margin-top: 0.5%;
+    margin-right: 10%;
+    font-weight: 900;
+    font-family: 'Roboto Condensed', sans-serif;
+    border-radius: 2vw;
+    max-height: 25px;
+    color: #462255;
+
+}
+
+#section2{
+    max-width: 1920px;
+    height: auto;
+    display: block;
+    padding: 0;
+}
+
+#bannerWebinar{
+    max-width: 1920px;
+    width: 100%;
+
+}
+
+#section3{
+    padding: 0;
+    padding-top: 3vh;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.subsections{
+    border-radius: 10px;
+    padding: 0;
+}
+
+.h3{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 500;
+    font-stretch: condensed;
+    text-align: left;
+    font-size: 5vw;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: #462255;
+}
+
+.participantes{
+    padding-top: 5%;
+    background: #ffffff;
+    width: 60%;
+    border-radius: 10px;
+    margin-top: 4%;
+    color: #462255;
+}
+
+.nomes{
+    padding-top: 10%;
+    padding-bottom: 3%;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cargo{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-style: oblique;
+}
+
+.sobre{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#somos{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
+    font-style: oblique;
+    font-size: 1em;
+    color: #462255;
+}
+
+#section4{
+    padding-bottom: 1em;
+}
+
+/* Pop up */ 
+
+.sad-news-container {
+    width: 100%;
+    height: 100%; 
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/bg-popup-desktop-roxo-1440x1024px.jpg);
+}
+
+.container-news {
+    width: 100%;
+    height: 100%;
+}
+
+.img-logo {
+    width: 130px;
+}
+
+.titulo1Pop {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    color: #462255;
+    font-size: 250%;
+    width: 70%;
+}
+
+#titulo2Pop {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #462255;
+    font-size: 140%;
+    width: 70%;
+}
+
+#botao{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    position: relative;
+    overflow-x: auto;
+    background: #ffffff;
+    color: #462255;
+    font-weight: 700;
+    font-size: 100%;
+    margin-top: 5%;
+}
+
+#tempoRestante {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    color: #462255;
+    font-size: 130%;
+}
+
+.nomesContador {
+    display: block;
+    background: white;
+    padding-top: 10%;
+    height: auto;
+    text-align: center;
+    border-radius: 10%;
+    width: 100%;
+    padding-bottom: 10%;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 160%;
+    color: #462255;
+    font-weight: 900;
+}
+
+.textoContador {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #462255;
+    font-size: 100%;
+    padding-left: 20%;
+    font-weight: 700;
+}
+
+/*FIM POP UP*/
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #462255;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#logoFooter{
+    width: 30%;
+}
+
+#direitos{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1em;
+    color: #ffffff;
+}
+
+@media (min-width: 640px) {
+    #botaoTopo{
+        max-height: 50px;
+        border-radius: 10px;
+        margin-top: 2%;
+    }
+
+    #section2{
+        padding-top: 2%;
+    }
+
+    #section3{
+        padding-top: 5vh;
+    }
+
+    .fotoPart{
+        width: 100%;
+        padding-bottom: 3%;
+    }
+
+    .h3{
+        font-size: 3vw;
+    }
+
+    .participantes{
+        padding-top: 1%;
+        width: 100%;
+        margin-top: 0%;
+        
+    }
+
+    #somos{
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        font-size: 3em;
+    }
+
+    .nomesContador {
+        width: 60%;
+        font-size: 230%;
+    }
+    
+    .textoContador {
+        font-size: 160%;
+    }
+
+    .titulo1Pop{
+        font-size: 260%;
+    }
+
+    #titulo2Pop{
+        font-size: 150%;
+        font-weight: normal;
+        width: 40%;
+        overflow-wrap: break-word;
+    }
+
+    #tempoRestante {
+        font-size: 160%;
+        font-weight: 900;
+    }
+
+    #button {
+        font-size: 28px;
+        margin-top: 48px;
+        width: 30%;
+    }
+    
+    #logoFooter{
+        width: 10%;
+    }
+
+    #direitos {
+        font-size: 2em;
+    }
+} 

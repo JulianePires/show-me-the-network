@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Nossa missão é incentivar a discussão sobre educação disruptiva, compartilhando informações sobre tendências para a educação privada no Brasil, promovendo o desenvolvimento de habilidades digitais e a criatividade.">
+            <meta name="keywords" content="HTML, CSS, JavaScript">
+            <meta name="author" content="Tened">
+            <title>Tened - Tendências em Educação</title>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+                integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+            <!--FAVICON-->
+            <link rel="shortcut icon" href="images/logo-tened-transp.png">
+            <!--BOOTSTRAP JS-->
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+                integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+                crossorigin="anonymous"></script>
+
+            <!--PRELOADS-->
+            <link rel="preload" href="css/estilo.css" as="style">
+            <link rel="preload" href="js/script.js" as="script">
+
+            <!--FONTES-->
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+            </style>
+
+            <!--CSS-->
+            <link rel="stylesheet" href="css/estilo.css">
+
+            <!--JAVASCRIPT-->
+            <script src="js/script.js" type="text/javascript"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        
+        <section class="container-sm|md|lg|xl container-fluid" id="section1">
+            <!--BANNER TOPO--><img src="images/bannerLanding.jpg" class="img-fluid" id="bannerTopo" alt="banner com botão de redirecionamento">
+            <button id="botaoTopo" class="btn d-block" onclick="redirectTo()">Quero Participar</button>
+        </section>
+        
+        <section class="container-sm|md|lg|xl container-fluid" id="section2">
+            <!--BANNER WEBINAR--><img src="images/Landing.jpg" id="bannerWebinar" class="img-fluid" alt="fundo roxo com um garoto segurando um binóculo, informações webinar: dia 9, 20 horas">
+        </section>
+
+        <section class="container-sm|md|lg|xl container-fluid mx-auto" id="section3">
+            
+            <div class="container-sm|md|lg|xl container-fluid subsections row mx-auto">
+                
+                <h3 class="h3 col-12" id="sobreTitle">Conheça os especialistas</h3>
+                
+                <div class="col-md-2 d-block mx-auto participantes w-70 text-center">
+                    <!--FOTO ALINE--><img alt="imagem da palestrante Aline Soares" class="fotoPart img-fluid" src="images/Aline.png">
+                    <h4 class="nomes d-block mx-auto">Aline Soares</h4>
+                    <h5 class="cargo d-block mx-auto">Professora e Pedagoga</h5>
+                    <p class="sobre d-block mx-auto">Atua no front da educação como professora especializada em ensino básico da rede privada e compartilhará, a partir de suas experiências, medidas que considera necessárias quando o assunto é inovação e sala de aula.</p>
+                </div>
+                
+                <div class="col-md-2 d-block mx-auto participantes text-center">
+                    <!--FOTO MARIANA--><img alt="imagem da palestrante Mariana Darruiz" class="fotoPart img-fluid" src="images/Mariana.png">
+                    <h4 class="nomes d-block mx-auto">Mariana Darruiz</h4>
+                    <h5 class="cargo d-block mx-auto">Neuropsicopedagoga</h5>
+                    <p class="sobre d-block mx-auto">É formada em psicopedagogia e neuroaprendizagem e contribuiu em diferentes frentes da educação. Hoje, atua na posição de orientadora educacional no ensino básico privado.</p>
+                </div>
+                
+                <div class="col-md-2 d-block mx-auto participantes text-center">
+                    <!--FOTO VAHID--><img alt="imagem do palestrante Vahid Shefarat" class="fotoPart img-fluid" src="images/Vahid.png">
+                    <h4 class="nomes d-block mx-auto">Vahid Shefarat</h4>
+                    <h5 class="cargo d-block mx-auto">CEO Classapp</h5>
+                    <p class="sobre d-block mx-auto">Construiu sua carreira direcionada na evolução e transformação da educação brasileira e hoje é CEO da ClassApp, uma das startups de tecnologia educacional que mais cresce no Brasil.</p>
+                </div>
+                
+                <div class="col-md-2 d-block mx-auto participantes text-center">
+                    <!--FOTO LEONARDO--><img alt="imagem da palestrante Leonardo Veloso" class="fotoPart img-fluid" src="images/Leonardo.png">
+                    <h4 class="nomes d-block mx-auto">Leonardo Veloso</h4>
+                    <h5 class="cargo d-block mx-auto">Professor de Empreendedorismo e Inovação</h5>
+                    <p class="sobre d-block mx-auto">Além de vasta experiência em planejamento de ensino, nosso último palestrante é professor de educação básica com foco em inovação, atuando em projetos que inserem soft skills e metodologias ágeis na sala de aula.</p>
+                </div>
+            
+            </div>
+        </section>
+
+        <section class="container-sm|md|lg|xl container-fluid mx-auto text-center" id="section4">
+            <h3 id="somos">Somos motivados pela inovação e você é nosso 
+            convidado para participar do webinar Caminhos da Educação</h3>
+        </section>
+
+        <section class="container-sm|md|lg|xl container-fluid mx-auto d-block text-center" id="section4">
+            <iframe title="Formulário de inscrição" id="formulario" width="300px" height="560px" class="col-md-12" src="https://cdn.forms-content.sg-form.com/12ce0a5f-c0b1-11ea-9cd4-12d2b2ca1287"></iframe>
+        </section>
+
+        <footer class="container-sm|md|lg|xl container-fluid row mx-auto text-center" id="footer">
+            <!--LOGO TENED--><img alt="Tened" id="logoFooter" class="img-fluid" src="images/logo-tened-branco-roxo.png">
+            <h4 id="direitos">Todos os Direitos Reservados</h4> 
+        </footer>
+
+        <!--POP UP EXIT INTENT-->
+        <div id="sad-news" class="sad-news-container">
+            <div class="container-news">
+                <img class="img-logo m-3" src="images/logo-tened-transp-roxo.png" alt="Logotipo Tened">
+                <h2 class="titulo1Pop m-3 ">Vai mesmo deixar essa passar?</h2>
+                <h4 id="titulo2Pop" class="m-3">Não perca tempo e aproveite essa oportunidade! Inscreva-se e receba materiais
+                    exclusivos.</h4>
+                <h4 id="tempoRestante" class="m-3">Tempo restante para se inscrever:</h4>
+        
+                <div class="container row mx-auto">
+                    <div class="col-3">
+                        <div id="d" class="container mx-auto nomesContador">
+        
+                        </div>
+                        <h5 class="textoContador" id="d">dias</h5>
+                    </div>
+                    <div class="col-3">
+                        <div id="h" class="container-fluid mx-auto d-block nomesContador">
+        
+                        </div>
+                        <h5 class="textoContador container-fluid mx-auto d-block ">horas</h5>
+                    </div>
+                    <div class="col-3">
+                        <div id="m" class="container mx-auto d-block nomesContador">
+        
+                        </div>
+                        <h5 class="textoContador mx-auto d-block">minutos</h5>
+                    </div>
+                    <div class="col-3">
+                        <div id="s" class="container mx-auto d-block nomesContador">
+        
+                        </div>
+                        <h5 class="textoContador mx-auto d-block">segundos</h5>
+                    </div>
+                </div>
+                <div class=" d-flex justify-content-center"> ;
+                    <button id="botao" class="btn d-block btn-light" onclick="closePopUpAndGoToForm()" href="#formulario">Não quero perder
+                        essa oportunidade</button>
+                </div>
+            </div>
+        </div>
+        <!--FIM POP UP-->
+
+
+    </body>
+</html>
