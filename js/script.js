@@ -52,7 +52,7 @@ function onMouseOut(event) {
         // Remove this event listener
         document.removeEventListener("mouseout", onMouseOut);
 
-        // Show the popup
+        // mostra o pop up
         document.getElementById("sad-news").style.display = "block";
     }
 }
@@ -70,18 +70,6 @@ function addEvent(obj, evt, fn) {
 }
 
 function redirectTo(){
+    e.preventDefault();
     location.hash = "#formulario";
 }
-
-$('.nav a[href^="#"]').on('click', function(e) {
-	e.preventDefault();
-	var id = $(this).attr('href'),
-			targetOffset = $(id).offset().top;
-			
-	$('html, body').animate({ 
-		scrollTop: targetOffset - 100
-	}, 500);
-}); 
-
-
-
