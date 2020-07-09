@@ -70,6 +70,5 @@ function addEvent(obj, evt, fn) {
 }
 
 function redirectTo(){
-    e.preventDefault();
     location.hash = "#formulario";
 }
