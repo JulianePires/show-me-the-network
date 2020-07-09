@@ -65,7 +65,7 @@ body{
     font-weight: 500;
     font-stretch: condensed;
     text-align: left;
-    font-size: 5vw;
+    font-size: 2em;
     padding-top: 1em;
     padding-bottom: 1em;
     color: #462255;
@@ -99,12 +99,12 @@ body{
 }
 
 #somos{
-    padding-top: 1em;
+    padding-top: 2em;
     padding-bottom: 1em;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 600;
     font-style: oblique;
-    font-size: 1em;
+    font-size: 2em;
     color: #462255;
 }
 
