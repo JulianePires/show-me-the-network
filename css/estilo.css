@@ -12,7 +12,7 @@ body{
 
 #section2{
     width: 100%;
-    height: auto;
+    height: 24vh;
     display: flex;
     justify-content: center;
     align-items: flex-end;
