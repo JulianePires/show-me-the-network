@@ -28,14 +28,14 @@ var x = setInterval(function() {
 
     if (distancia < 0) {
         clearInterval(x);
-        document.getElementById("contador").innerHTML = "Tempo Esgotado";
+        document.getElementById("contador").innerHTML = "Estamos ao vivo!";
     }
 }, 1000);
 
 function closePopUpAndGoToForm(event) {
     // Hide the popup
     document.getElementById("sad-news").style.display = "none";
-    location.hash = "#formulario";
+    location.href = "https://www.youtube.com/watch?v=aK2KbOVYIHc";
 }
 function closePopUp(event) {
     // Hide the popup
@@ -69,6 +69,6 @@ function addEvent(obj, evt, fn) {
     }
 }
 
-function redirectTo(){
-    location.hash = "#formulario";
-}
+function redirectTo() {
+    location.href = "https://www.youtube.com/watch?v=aK2KbOVYIHc";
+};

@@ -44,7 +44,7 @@ body{
 
 #section3{
     padding: 0;
-    padding-top: 3vh;
+    padding-top: 1vh;
     margin-right: 2%;
     margin-left: 2%;
 }
@@ -94,7 +94,6 @@ body{
 
 #somos{
     padding-top: 2em;
-    padding-bottom: 1em;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 600;
     font-style: oblique;
@@ -103,7 +102,7 @@ body{
 }
 
 #section4{
-    padding-bottom: 1em;
+    padding-bottom: 4em;
 }
 
 /* Pop up */ 
@@ -118,7 +117,7 @@ body{
     display: none;
     justify-content: center;
     align-items: center;
-    background-image: url(../images/bg-popup-desktop-roxo-1440x1024px.jpg);
+    background-image: url(../images/bg-popup-desktop-roxo-1440x1024px.jpg) no-repeat;
 }
 
 .container-news {
@@ -214,6 +213,33 @@ body{
     color: #ffffff;
 }
 
+#estamos {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    color: #462255;
+    font-size: 250%;
+    width: 70%;
+}
+
+#acesse {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: oblique;
+    font-weight: 400;
+    color: #462255;
+    font-size: 250%;
+    width: 70%;
+}
+
+#botaoRedirect {
+    background: #F28123;
+    color: #462255;
+    font-weight: bold;
+    font-size: 1.5em;
+    border-radius: 10px;
+    font-style: normal;
+}
+
 @media (max-width: 540px) {
     #section2{
         height: 24vh;
@@ -296,4 +322,9 @@ body{
     #direitos {
         font-size: 2em;
     }
+
+    #botaoRedirect {
+        font-size: 2em;
+    }
+    
 } 
