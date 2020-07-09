@@ -35,7 +35,7 @@ var x = setInterval(function() {
 function closePopUpAndGoToForm(event) {
     // Hide the popup
     document.getElementById("sad-news").style.display = "none";
-    location.hash = "#containerIframe";
+    location.hash = "#formulario";
 }
 function closePopUp(event) {
     // Hide the popup
@@ -69,6 +69,19 @@ function addEvent(obj, evt, fn) {
     }
 }
 
+function redirectTo(){
+    location.hash = "#formulario";
+}
+
+$('.nav a[href^="#"]').on('click', function(e) {
+	e.preventDefault();
+	var id = $(this).attr('href'),
+			targetOffset = $(id).offset().top;
+			
+	$('html, body').animate({ 
+		scrollTop: targetOffset - 100
+	}, 500);
+}); 
 
 
 
