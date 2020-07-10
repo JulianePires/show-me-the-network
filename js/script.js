@@ -1,4 +1,4 @@
-//CONTADOR
+/*//CONTADOR
 //DEFINE A DATA PARA QUAL ESTAMOS CONTANDO
 var dataContador = new Date("Jul 9, 2020 20:00:00").getTime();
 
@@ -32,42 +32,42 @@ var x = setInterval(function() {
     }
 }, 1000);
 
-function closePopUpAndGoToForm(event) {
+//function closePopUpAndGoToForm(event) {
     // Hide the popup
-    document.getElementById("sad-news").style.display = "none";
-    location.href = "https://www.youtube.com/watch?v=aK2KbOVYIHc";
-}
-function closePopUp(event) {
-    // Hide the popup
-    document.getElementById("sad-news").style.display = "none";
-}
+//    document.getElementById("sad-news").style.display = "none";
+//    location.href = "https://www.youtube.com/watch?v=aK2KbOVYIHc";
+//}
+//function closePopUp(event) {
+//    // Hide the popup
+//   document.getElementById("sad-news").style.display = "none";
+//}
 
-function onMouseOut(event) {
-    // If the mouse is near the top of the window, show the popup
-    // Also, do NOT trigger when hovering or clicking on selects
-    if (
-        event.clientY < 50 &&
-        event.relatedTarget == null &&
-        event.target.nodeName.toLowerCase() !== 'select') {
-        // Remove this event listener
-        document.removeEventListener("mouseout", onMouseOut);
-
-        // mostra o pop up
-        document.getElementById("sad-news").style.display = "block";
-    }
-}
+//function onMouseOut(event) {
+//    // If the mouse is near the top of the window, show the popup
+//    // Also, do NOT trigger when hovering or clicking on selects
+//    if (
+//        event.clientY < 50 &&
+//        event.relatedTarget == null &&
+//        event.target.nodeName.toLowerCase() !== 'select') {
+//       // Remove this event listener
+//        document.removeEventListener("mouseout", onMouseOut);
+//
+//        // mostra o pop up
+//        document.getElementById("sad-news").style.display = "block";
+//    }
+//}
 // ação do evento
-document.addEventListener("mouseout", onMouseOut); 
+//document.addEventListener("mouseout", onMouseOut); 
 
 // Exit intent
-function addEvent(obj, evt, fn) {
-    if (obj.addEventListener) {
-        obj.addEventListener(evt, fn, false);
-    }
-    else if (obj.attachEvent) {
-        obj.attachEvent("on" + evt, fn);
-    }
-}
+//function addEvent(obj, evt, fn) {
+//    if (obj.addEventListener) {
+//        obj.addEventListener(evt, fn, false);
+//    }
+//    else if (obj.attachEvent) {
+//        obj.attachEvent("on" + evt, fn);
+//    }
+//} */
 
 function redirectTo() {
     location.href = "https://www.youtube.com/watch?v=aK2KbOVYIHc";
