@@ -9,4 +9,4 @@ Lançamento da V1 [funcional]:  07/07/2020
 
 Lançamento da V2: 09/07/2020
 
-Versão final (saída de formulário -> entrada de 
+Versão final (saída de formulário -> entrada de link de redirecionamento)
