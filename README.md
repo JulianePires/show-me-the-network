@@ -7,7 +7,7 @@ A landing page surgiu com o intuito de divulgar o webinar realizado no dia 09/07
 
 ## Link
 
-[https://tened.co](https://tened.co)
+[TENED](https://tened.co)
 
 ## Histórico de lançamentos
 
@@ -23,15 +23,15 @@ A landing page surgiu com o intuito de divulgar o webinar realizado no dia 09/07
 
 ## Meta
 
-Bárbara Viana – [Linkedin](https://www.linkedin.com/in/vianabsouza/) – vianabsouza@gmail.com
-Juliane Pires – [Linkedin](https://www.linkedin.com/in/juliane-pires/) – mpiresjuliane@outlook.com
-Rafael Soares – [Linkedin](https://www.linkedin.com/in/rafaelsoares1/) – rafasgcarvalho@gmail.com
+* Bárbara Viana – [Linkedin](https://www.linkedin.com/in/vianabsouza/) – vianabsouza@gmail.com
+* Juliane Pires – [Linkedin](https://www.linkedin.com/in/juliane-pires/) – mpiresjuliane@outlook.com
+* Rafael Soares – [Linkedin](https://www.linkedin.com/in/rafaelsoares1/) – rafasgcarvalho@gmail.com
 
 Distribuído sob a licença GNU GENERAL PUBLIC LICENSE v3. Veja `LICENSE` para mais informações.
 
-[https://github.com/vianabsouza](https://https://github.com/vianabsouza)
-[https://github.com/JulianePires](https://https://github.com/JulianePires)
-[https://github.com/Ralfargon](https://https://github.com/Ralfargon)
+* [https://github.com/vianabsouza](https://https://github.com/vianabsouza)
+* [https://github.com/JulianePires](https://https://github.com/JulianePires)
+* [https://github.com/Ralfargon](https://https://github.com/Ralfargon)
 
 ## Contributing
 
